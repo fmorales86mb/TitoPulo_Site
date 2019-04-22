@@ -7,17 +7,17 @@
         public $autor;
         public $duracion;
 
-        public function __construct($strArray){
-            $this->id =$strArray[0];
-            $this->titulo =$strArray[1];
-            $this->genero =$strArray[2];
-            $this->anio = $strArray[3];
-            $this->autor =$strArray[4];
-            $this->duracion =$strArray[5];
+        public function __construct($strArray){            
+            $this->id =$strArray["id"];
+            $this->titulo =$strArray["titulo"];
+            $this->genero =$strArray["genero"];
+            $this->anio = $strArray["anio"];
+            $this->autor =$strArray["autor"];
+            $this->duracion =$strArray["duracion"];
         }
 
         public function ToCSV(){
-            return "$this->id; $this->titulo; $this->genero; $this->anio; $this->autor; $this->duracion;<br>";
+            return "id:$this->id;titulo:$this->titulo;genero:$this->genero;anio:$this->anio;autor:$this->autor;duracion:$this->duracion";
         }
 
         public function ToJson(){

@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tito Pulo</title>    
     <link rel="stylesheet" href="../css/index.css">
-    <script src="../js/index.js"></script>
+    <script src="../js/peliculas.js"></script>
+    <script src="../js/funciones_base.js"></script>
 </head>
 <body>
     <header>
@@ -19,6 +20,9 @@
                 <tr>
                     <th>
                         <button type="submit">Películas</button>
+                    </th>
+                    <th>
+                        <button type="submit" id="btnIngresarPelicula">Ingresar Película</button>
                     </th>
                     <th>
                         <button type="submit">Autores</button>
@@ -34,17 +38,38 @@
         </div>
     </header>
 
-    <section>
+    <section id="seccion_ingreso_pelicula" hidden>
+        <form action="">
+            <h3>Ingrasar Película:</h3>
+            <p>
+                <span>Título</span> <input type="text" id="txtTitulo">
+            </p>
+            <p>
+                <span>Año: </span><input type="datetime" id="txtAnio">
+            </p>
+            <p>
+                <span>Autor: </span><input type="text" id="txtAutor">
+            </p>
+            <p>
+                <span>Género: </span><input type="text" id="txtGenero">
+            </p> 
+            <p>
+                <span>Duración: </span><input type="text" id="txtDuracion">
+            </p> 
+            <p><input type="button" value="Agregar" id="btnAgregar"></p>                                   
+        </form>
+    </section>
+
+    <section id="seccion_tabla_peliculas">
         <table id="tabla_peliculas">
             <thead>
                 <th>Título</th>
-                <th>Año</th>
                 <th>Autor</th>
                 <th>Género</th>
+                <th>Año</th>
                 <th>Duración</th>
             </thead>                
-            <tbody id="tabla_peliculas_body">
-                
+            <tbody id="tabla_peliculas_body">                
             </tbody>        
         </table>        
     </section>

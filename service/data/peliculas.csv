@@ -1,4 +1,1 @@
-1;Pizza, birra, faso;Drama;1998;Catalano;02:20;
-2;pelicula;Drama;1993;Catalan1;02:30;
-3;El Padrino;Drama;1995;Catalan2;02:40;
-4;Dr. Insólito;Drama;1992;Catalan3;02:50;
+{"id":"3","titulo":"El Padrino","genero":"Drama","anio":"1995","autor":"Catalan2","duracion":"02:40"}
